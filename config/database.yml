@@ -5,7 +5,9 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 development:
   <<: *default
-  database: blog_rift_development
+  database: blog_rift_db
+  username: postgres
+  password: 0558119187Andoh
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
@@ -15,5 +17,5 @@ test:
 production:
   <<: *default
   database: blog_rift_production
-  username: blog_rift
+  username: postgres
   password: <%= ENV["BLOG_RIFT_DATABASE_PASSWORD"] %>
