@@ -1,6 +1,4 @@
 # db/migrate/20231124074659_create_comments.rb
-# frozen_string_literal: true
-
 # Migration to create the comments table.
 
 

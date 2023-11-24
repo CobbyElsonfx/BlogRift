@@ -2,7 +2,6 @@
 # db/migrate/20231124074008_create_likes.rb
 
 # Migration to create the likes table.
-# frozen_string_literal: true
 
 class CreateLikes < ActiveRecord::Migration[7.1]
   def change

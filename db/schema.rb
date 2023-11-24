@@ -2,9 +2,6 @@
 # db/migrate/20231124074008_create_likes.rb
 # db/migrate/20231124074659_create_comments.rb
 # db/schema.rb
-
-# frozen_string_literal: true
-
 ActiveRecord::Schema[7.1].define(version: 20_231_124_074_659) do
   enable_extension 'plpgsql'
 
