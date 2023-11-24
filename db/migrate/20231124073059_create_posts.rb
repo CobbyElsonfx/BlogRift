@@ -1,3 +1,9 @@
+# db/migrate/20231124073059_create_posts.rb
+
+# Migration to create the posts table.
+
+# frozen_string_literal: true
+
 class CreatePosts < ActiveRecord::Migration[7.1]
   def change
     create_table :posts do |t|
