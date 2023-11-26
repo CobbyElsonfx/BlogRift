@@ -11,7 +11,7 @@ RSpec.describe Comment, type: :model do
   end
 
   it 'updates post comments counter after save' do
-    comment = Comment.create(user: user, post: post, text: 'Hi Tom!')
+    comment = Comment.create(user:, post:, text: 'Hi Tom!')
 
     post.reload
     expect(post.comments_counter).to eq(1)
