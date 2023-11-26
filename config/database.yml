@@ -82,5 +82,5 @@ test:
 production:
   <<: *default
   database: blog_rift_production
-  username: blog_app
-  password: <%= ENV["BLOG_APP_DATABASE_PASSWORD"] %>
+   username: postgres
+  password: <%= ENV["BLOG_RIFT_DATABASE_PASSWORD"] %>
