@@ -1,19 +1,32 @@
 source 'https://rubygems.org'
-# Gemfile
-
-gem 'rubocop', '>= 1.0', '< 2.0'
 
 ruby '3.2.2'
-gem 'importmap-rails'
-gem 'jbuilder'
-gem 'pg', '~> 1.1'
-gem 'puma', '>= 5.0'
-gem 'rails', '~> 7.1.2'
-gem 'rspec-rails'
+
+# Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
+gem 'rails', '~> 7.1.1'
+
+# The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
-gem 'stimulus-rails'
+
+# Use postgresql as the database for Active Record
+gem 'pg', '~> 1.1'
+
+# Use the Puma web server [https://github.com/puma/puma]
+gem 'puma', '>= 5.0'
+
+# Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
+gem 'importmap-rails'
+
+# Hotwire's SPA-like page accelerator [https://turbo.hotwired.dev]
 gem 'turbo-rails'
 
+# Hotwire's modest JavaScript framework [https://stimulus.hotwired.dev]
+gem 'stimulus-rails'
+
+# Build JSON APIs with ease [https://github.com/rails/jbuilder]
+gem 'jbuilder'
+
+gem 'rubocop', '>= 1.0', '< 2.0'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
@@ -35,6 +48,7 @@ gem 'bootsnap', require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem 'debug', platforms: %i[mri windows]
+  gem 'rspec-rails'
 end
 
 group :development do
