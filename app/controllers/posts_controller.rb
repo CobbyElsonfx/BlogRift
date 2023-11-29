@@ -1,5 +1,5 @@
 class PostsController 
-    before_action: set_user
+    before_action :set_user
     def index
         @posts = @user.posts
     end 
