@@ -1,18 +1,22 @@
-# db/migrate/20231124073059_create_posts.rb
-# db/migrate/20231124074008_create_likes.rb
-# db/migrate/20231124074659_create_comments.rb
-# db/schema.rb
+# This file is auto-generated from the current state of the database. Instead
+# of editing this file, please use the migrations feature of Active Record to
+# incrementally modify your database, and then regenerate this schema definition.
+#
+# This file is the source Rails uses to define your schema when running `bin/rails
+# db:schema:load`. When creating a new database, `bin/rails db:schema:load` tends to
+# be faster and is potentially less error prone than running all of your
+# migrations from scratch. Old migrations may fail to apply correctly if those
+# migrations use external dependencies or application code.
+#
+# It's strongly recommended that you check this file into your version control system.
 
-# frozen_string_literal: true
-
-
-ActiveRecord::Schema[7.1].define(version: 20_231_124_074_659) do
+ActiveRecord::Schema[7.1].define(version: 20_231_025_193_534) do
   # These are extensions that must be enabled in order to support this database
   enable_extension 'plpgsql'
 
   create_table 'comments', force: :cascade do |t|
-    t.bigint 'user_id', null: false
-    t.bigint 'post_id', null: false
+    t.bigint 'user_id'
+    t.bigint 'post_id'
     t.text 'text'
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
@@ -21,8 +25,8 @@ ActiveRecord::Schema[7.1].define(version: 20_231_124_074_659) do
   end
 
   create_table 'likes', force: :cascade do |t|
-    t.bigint 'user_id', null: false
-    t.bigint 'post_id', null: false
+    t.bigint 'user_id'
+    t.bigint 'post_id'
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
     t.index ['post_id'], name: 'index_likes_on_post_id'
@@ -33,8 +37,8 @@ ActiveRecord::Schema[7.1].define(version: 20_231_124_074_659) do
     t.bigint 'author_id'
     t.string 'title'
     t.text 'text'
-    t.integer 'comments_counter'
-    t.integer 'likes_counter'
+    t.integer 'comments_counter', default: 0
+    t.integer 'likes_counter', default: 0
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
     t.index ['author_id'], name: 'index_posts_on_author_id'
@@ -44,10 +48,9 @@ ActiveRecord::Schema[7.1].define(version: 20_231_124_074_659) do
     t.string 'name'
     t.string 'photo'
     t.text 'bio'
-    t.integer 'posts_counter'
+    t.integer 'post_counter', default: 0
     t.datetime 'created_at', null: false
     t.datetime 'updated_at', null: false
-    t.index ['name'], name: 'index_users_on_name'
   end
 
   add_foreign_key 'comments', 'posts'

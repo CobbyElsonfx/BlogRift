@@ -1,8 +1,3 @@
-# config/application.rb
-
-# The main application class.
-# frozen_string_literal: true
-
 require_relative 'boot'
 
 require 'rails/all'
