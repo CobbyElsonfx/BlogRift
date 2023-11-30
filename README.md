@@ -5,7 +5,6 @@
   - [🛠️ Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -43,10 +42,6 @@
 - **Fully Functional Blog Website**
 - **User Authentication and Authorization**
 - **Interactive Comments and Likes**
-
-# 🚀 Live Demo
-
-- [Not available yet](#)
 
 # 💻 Getting Started
 
