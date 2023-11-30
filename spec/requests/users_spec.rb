@@ -19,7 +19,6 @@ RSpec.describe 'Users', type: :request do
     end
   end
 
-
   describe 'GET /users/:id' do
     let(:user) { create(:user) }
 
