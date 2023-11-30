@@ -13,7 +13,7 @@ RSpec.describe 'Users', type: :request do
       expect(response).to render_template(:index)
     end
 
-    it 'have the content List of all users' do 
+    it 'have the content List of all users' do
       get '/users'
       expect(response.body).to match(/List of all users/)
     end
@@ -35,9 +35,7 @@ RSpec.describe 'Users', type: :request do
 
     it 'to have content' do
       get "/users/#{user.id}"
-      expect(response.body).to match(/<p>Specific user<\/p>/)
+      expect(response.body).to match(%r{<p>Specific user</p>})
     end
   end
-
-  
 end

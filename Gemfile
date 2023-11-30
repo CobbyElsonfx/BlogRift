@@ -24,9 +24,9 @@ gem 'turbo-rails'
 gem 'stimulus-rails'
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
-gem 'jbuilder'
-gem 'factory_bot_rails', group: [:development, :test]
 gem 'bootsnap', require: false
+gem 'factory_bot_rails', group: %i[development test]
+gem 'jbuilder'
 gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'tzinfo-data', platforms: %i[windows jruby]
 group :development, :test do
