@@ -1,4 +1,4 @@
-module Users
+# module Users
 class Users::PostsController < ApplicationController
   before_action :set_user
   before_action :set_post, only: [:show]
