@@ -42,4 +42,3 @@ class Users::PostsController < ApplicationController
     @post = @user.posts.includes(:author, :comments).find(params[:id])
   end
 end
-
