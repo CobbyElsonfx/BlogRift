@@ -1,0 +1,92 @@
+/* Add this CSS to your application.css or create a new CSS file */
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* User Card Styles */
+  .user-card {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    text-decoration: none;
+    gap: 15px;
+    margin: 10px;
+    padding: 2rem;
+    transition: transform 0.3s ease-in-out;
+    background-color: rgb(228, 227, 231);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .imgWrapper {
+    background-color: rgb(13, 5, 56);
+    width: 100px;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .user-card:hover {
+    transform: scale(1.05);
+  }
+  
+
+  
+  .user-image {
+    object-fit: cover;
+    margin-right: 15px;
+  }
+  
+  .user-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+  }
+  
+  .user-name {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 8px;
+  }
+  
+  .user-posts {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+
+  .bioData {
+    height: 12rem;
+    padding: 2rem;
+    width: 80vw;
+  }
+  
+
+  .eachPosts {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    text-decoration: none;
+    padding: 2rem;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    background-color: rgb(228, 227, 231);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  }
+
+  .noComments {
+    text-align: center;
+  }
