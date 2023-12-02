@@ -1,1 +1,22 @@
-<h1>List of all users</h1>
+<section class="w-full">
+  <div class="container">
+    <div class="flex-row flex-wrap -m-2">
+      <% @users.each do |user| %>
+        <div>
+          <a href="<%= user_path(user) %>">
+        </div>
+        <div class="user-card">
+            <div class="imgWrapper">
+            <img src="<%= user.photo %>" alt="team" class="user-image" >
+            </div>
+            <div class="user-info">
+            <h2 class="user-name"><%= user.name %></h2>
+            <p class="user-posts">Number of posts: <%= user.posts.count %></p>
+            </div>  
+        </div>
+       </a>
+      <% end %>
+    </div>
+  </div>
+</section>
+

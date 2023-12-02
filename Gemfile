@@ -28,6 +28,7 @@ gem 'bootsnap', require: false
 gem 'factory_bot_rails', group: %i[development test]
 gem 'jbuilder'
 gem 'rubocop', '>= 1.0', '< 2.0'
+gem 'tailwindcss-rails', '~> 2.0'
 gem 'tzinfo-data', platforms: %i[windows jruby]
 group :development, :test do
   gem 'debug', platforms: %i[mri windows]
