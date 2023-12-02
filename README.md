@@ -2,20 +2,23 @@
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
+  - [🛠️ Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
   - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-- [👥 Author](#author)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
+- [⭐ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
+
 
 # 📖 Blog App
 
@@ -39,10 +42,6 @@
 - **Fully Functional Blog Website**
 - **User Authentication and Authorization**
 - **Interactive Comments and Likes**
-
-# 🚀 Live Demo
-
-- [Not available yet](#)
 
 # 💻 Getting Started
 
@@ -89,16 +88,34 @@ The application should be available at http://localhost:3000.
 # 🔭 Future Features
  - Advanced Visual Design
 
-# 🤝 Contributing
-Contributions, issues, and feature requests are welcome!
+<!-- CONTRIBUTING -->
 
-Feel free to check the issues page.
+## 🤝 Contributing <a name="contributing"></a>
 
-# ⭐️ Show your support
-If you find this repository helpful...
+All contributions, issues, and feature requests are welcome!
 
-# 📝 License
-
-This project is [MIT](./MIT.md) licensed.
+Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐ Show your support <a name="support"></a>
+
+If you like this project, please support me with a like or a star.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+Thanks to my learning partners and the staff at Microverse.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./MIT.md) licensed.
