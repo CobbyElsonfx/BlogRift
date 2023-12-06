@@ -1,5 +1,5 @@
-<section class="w-full">
-  <div class="container w-full">
+<section>
+  <div>
     <div class="user-card">
     <div class="imgWrapper">
     <img src=<%= @user.photo%> alt="team">
@@ -21,6 +21,7 @@
           <div > 
             <h2 class="" >Post #<%= index + 1 %></h2>
             <p class=""><%= post.text %></p>
+            <h2  ><%= post.title%></h2>
             <p class="">Comments: <%= post.comments.count %> Likes: <%= post.likes.count %> </p>
           </div>
         </a>

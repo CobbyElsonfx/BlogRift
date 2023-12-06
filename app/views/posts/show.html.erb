@@ -1,0 +1,52 @@
+<% author = User.find(@post.author_id) %>
+<section>
+  <div >
+    <div>
+      <div>
+        <h2 >Post #<%= @post_index + 1 %> by <%= author.name %> </h2>
+        <h3 ><%= @post.title %> </h2>
+        
+        <div>
+          <p>
+            Comments: <%= @post.comments.count %>, 
+          </p>
+          <p>
+            Likes: <%= @post.likes.count %>
+          </p>
+            <div>
+            <%= form_with model: @new_like, url: user_post_likes_path(user_id: @current_user, post_id: @post) do |f| %>
+              <div>
+                <%= button_tag( :class => "button_green") do %>
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5 text-gray-500" viewBox="0 0 24 24">
+                  <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path>
+                </svg>
+                <% end %>
+              </div>
+            <% end %>
+            </div>
+        </div>
+
+        <p><%= @post.text%></p>
+      </div>
+    </div>
+    <div >
+      <% if @post.comments.count >= 1 %> 
+        <% @post.comments.each do |comment| %>
+          <% comentor = User.find(comment.user_id) %>
+          <p><%= comentor.name %>: <%= comment.text %></p>
+        <% end %>
+        <% else %>
+          <p>No comments yet.</p>
+      <% end %>
+    </div>
+    <div>
+      <div>   
+        <a href="<%= new_user_post_comment_path(@user, @post) %>">
+          <button>
+          Make a Comment
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

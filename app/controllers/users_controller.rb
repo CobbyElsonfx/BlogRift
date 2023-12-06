@@ -1,17 +1,10 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: [:show]
-
   def index
     @users = User.all
   end
 
   def show
-    @top_posts = @user.top_posts
-  end
-
-  private
-
-  def set_user
+    @current_user = current_user
     @user = User.find(params[:id])
   end
 end
