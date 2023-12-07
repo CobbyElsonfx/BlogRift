@@ -30,10 +30,9 @@
       </div>
     </div>
     <div >
-      <% if @post.comments.count >= 1 %> 
-        <% @post.comments.each do |comment| %>
-          <% comentor = User.find(comment.user_id) %>
-          <p><%= comentor.name %>: <%= comment.text %></p>
+    <% if @post.comments.size >= 1 %> 
+    <% @post.comments.includes(:user).each do |comment| %>
+      <p class="text-gray-500"><%= comment.user.name %>: <%= comment.text %></p>
         <% end %>
         <% else %>
           <p>No comments yet.</p>
@@ -41,8 +40,7 @@
     </div>
     <div>
       <div>   
-        <a href="<%= new_user_post_comment_path(@user, @post) %>">
-          <button>
+      <a href="<%= new_user_post_comment_path(@post.author, @post) %>" class="flex justify-center">          <button>
           Make a Comment
           </button>
         </a>
