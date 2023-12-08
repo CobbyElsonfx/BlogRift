@@ -14,11 +14,14 @@ RSpec.describe 'User Index page', type: :system do
     it 'shows the right names' do
       expect(page).to have_content('Tom')
     end
+    it 'shows the right names' do
+      expect(page).to have_content('Lilly')
+    end
     it 'shows the right images' do
       expect(page).to have_css("img[src*='https://unsplash.com/photos/F_-0BxGuVvo']")
     end
     it 'shows the number of posts for each user' do
-      expect(page).to have_content(/number of posts: 1/i)
+      expect(page).to have_content('number of posts: 1')
       expect(page).to have_content('number of posts: 0')
     end
   end

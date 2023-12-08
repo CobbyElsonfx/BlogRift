@@ -45,7 +45,7 @@ RSpec.describe 'User post index', type: :system do
       expect(page).to have_content('This is my fourth post text')
       expect(page).to have_content('This is my fifth post text')
     end
-    it 'shows how many comments for the posts' do
+    it 'shows first comment in a post' do
       expect(page).to have_content('Comment on first post')
       expect(page).to have_content('First comment on second post')
       expect(page).to have_content('Second comment on second post')
