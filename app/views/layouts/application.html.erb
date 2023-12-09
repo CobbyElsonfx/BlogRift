@@ -15,6 +15,20 @@
 </head>
 <body>
   <!-- Your page content goes here -->
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <nav>
+    <% if user_signed_in? %>
+      <%= button_to(
+        "Log Out",
+        destroy_user_session_path,
+        method: :delete
+      ) %>
+    <% else %>
+    <% end %>
+  </nav>
+  <div>
   <%= yield %>
+  </div>
 </body>
 </html>
